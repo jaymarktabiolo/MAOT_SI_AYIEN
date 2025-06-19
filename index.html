@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You Proposal - Interactive Flower Bouquet</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts for elegant typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated starry background -->
+    <div class="stars-container">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <!-- Music control and philosophy buttons -->
+    <div class="control-buttons">
+        <button id="musicBtn" class="control-btn music-btn" title="Play romantic music">
+            <i class="fas fa-music"></i>
+            <span>Play me</span>
+        </button>
+        <button id="philosophyBtn" class="control-btn philosophy-btn" title="Explore life's meaning">
+            <i class="fas fa-lightbulb"></i>
+            <span>What is life?</span>
+        </button>
+        <audio id="backgroundMusic" loop>
+            <source src="Rico Blanco - Your Universe .mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header section -->
+        <header class="header">
+            <h1 class="main-title">A Bouquet of Gratitude</h1>
+            <p class="subtitle">Choose a bouquet to express your heartfelt thanks</p>
+        </header>
+
+        <!-- Bouquet selection buttons -->
+        <div class="bouquet-selection">
+            <button class="bouquet-btn" data-flower="roses">
+                <div class="btn-icon roses-icon">🌹</div>
+                <span class="btn-text">Roses</span>
+                <div class="btn-glow"></div>
+            </button>
+            
+            <button class="bouquet-btn" data-flower="tulips">
+                <div class="btn-icon tulips-icon">🌷</div>
+                <span class="btn-text">Tulips</span>
+                <div class="btn-glow"></div>
+            </button>
+            
+            <button class="bouquet-btn" data-flower="sunflowers">
+                <div class="btn-icon sunflowers-icon">🌻</div>
+                <span class="btn-text">Sunflowers</span>
+                <div class="btn-glow"></div>
+            </button>
+            
+            <button class="bouquet-btn" data-flower="lilies">
+                <div class="btn-icon lilies-icon">🌼</div>
+                <span class="btn-text">Lilies</span>
+                <div class="btn-glow"></div>
+            </button>
+        </div>
+
+        <!-- Bouquet display area -->
+        <div class="bouquet-display" id="bouquetDisplay">
+            <div class="welcome-message">
+                <h2>Welcome to Your Gratitude Garden</h2>
+                <p>Click on any bouquet above to see its beautiful animation and discover the meaning behind each flower. TAMAYA YIEN HA KUNG UNSAY MA SULTI NIMO HA HAHAHAHAHA.</p>
+            </div>
+        </div>
+
+        <!-- Flower meanings display -->
+        <div class="flower-meaning" id="flowerMeaning">
+            <!-- Content will be dynamically inserted here -->
+        </div>
+
+        <!-- Philosophy message display -->
+        <div class="philosophy-message" id="philosophyMessage">
+            <!-- Content will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Floating petals animation -->
+    <div class="floating-petals" id="floatingPetals"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
